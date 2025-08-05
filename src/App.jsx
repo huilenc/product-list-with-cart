@@ -91,10 +91,10 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[hsl(20,50%,98%)] font-red-hat flex flex-col">
-      <div className="flex-1 px-4 sm:px-6 lg:px-8 py-8 bg-[hsl(20,50%,98%)]">
+      <main className="flex-1 px-4 sm:px-6 lg:px-8 py-8 bg-[hsl(20,50%,98%)]">
         <h1 className="text-3xl font-bold text-[#2D1E0F] mb-8">Desserts</h1>
         <div className="flex flex-col lg:flex-row gap-8">
-          <div className="lg:w-[70%]">
+          <section className="lg:w-[70%]" aria-label="Product listing">
             <ProductList 
               products={products}
               itemQuantities={itemQuantities}
@@ -102,16 +102,16 @@ function App() {
               onIncrement={onIncrement}
               onDecrement={onDecrement}
             />
-          </div>
-          <div className="lg:w-[30%] lg:flex-shrink-0">
+          </section>
+          <aside className="lg:w-[30%] lg:flex-shrink-0" aria-label="Shopping cart">
             <Cart 
               cartItems={cartItems}
               onRemoveItem={onRemoveItem}
               onConfirmOrder={onConfirmOrder}
             />
-          </div>
+          </aside>
         </div>
-      </div>
+      </main>
 
       <footer className="attribution bg-[hsl(20,50%,98%)]">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.  

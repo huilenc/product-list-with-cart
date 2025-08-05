@@ -15,7 +15,7 @@ export const Cart = ({ cartItems = [], onRemoveItem, onConfirmOrder }) => {
                 <div className="flex flex-col items-center justify-center py-8">
                     <img 
                         src={emptyCartIcon} 
-                        alt="Empty cart" 
+                        alt="Empty shopping cart illustration" 
                         className="w-24 h-24 mb-4"
                     />
                     <p className="text-[#B85C2B] text-sm font-red-hat">
@@ -43,7 +43,7 @@ export const Cart = ({ cartItems = [], onRemoveItem, onConfirmOrder }) => {
                                 <button
                                     onClick={() => onRemoveItem(index)}
                                     className="text-[#B85C2B] hover:text-red-500 transition-colors w-6 h-6 rounded-full border border-[#B85C2B] hover:border-red-300 flex items-center justify-center flex-shrink-0"
-                                    aria-label="Remove item"
+                                    aria-label={`Remove ${item.name} from cart`}
                                 >
                                     ✕
                                 </button>
@@ -60,7 +60,7 @@ export const Cart = ({ cartItems = [], onRemoveItem, onConfirmOrder }) => {
                         </div>
                         
                         <div className="flex items-center justify-center gap-2 text-xs text-[#B85C2B] mb-4 py-2 bg-[hsl(20,50%,98%)] rounded-lg">
-                            <img src={carbonNeutralIcon} alt="Carbon neutral" className="w-4 h-4" />
+                            <img src={carbonNeutralIcon} alt="Carbon neutral leaf icon" className="w-4 h-4" />
                             <span className="font-red-hat">This is a carbon-neutral delivery</span>
                         </div>
                         

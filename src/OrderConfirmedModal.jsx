@@ -10,7 +10,7 @@ export const OrderConfirmedModal = ({ cartItems, totalPrice, onStartNewOrder }) 
                         <div className="flex justify-center mb-4">
                             <img 
                                 src={orderConfirmedIcon} 
-                                alt="Order confirmed" 
+                                alt="Order confirmation checkmark" 
                                 className="w-16 h-16"
                             />
                         </div>
@@ -29,7 +29,7 @@ export const OrderConfirmedModal = ({ cartItems, totalPrice, onStartNewOrder }) 
                                 <div className="flex items-center gap-3 flex-1">
                                     <img 
                                         src={item.image.desktop} 
-                                        alt={item.name} 
+                                        alt={`${item.name} product image`} 
                                         className="w-12 h-12 rounded-lg object-cover"
                                     />
                                     <div className="min-w-0 flex-1">
