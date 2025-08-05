@@ -1,4 +1,4 @@
-import orderConfirmedIcon from './assets/images/icon-order-confirmed.svg'
+import orderConfirmedIcon from '/assets/images/icon-order-confirmed.svg'
 
 export const OrderConfirmedModal = ({ cartItems, totalPrice, onStartNewOrder }) => {
     return (
@@ -48,7 +48,7 @@ export const OrderConfirmedModal = ({ cartItems, totalPrice, onStartNewOrder }) 
                         ))}
                         
                         {/* Order Total */}
-                        <div className="flex justify-between items-center pt-4 mt-4">
+                        <div className="flex justify-between items-center pt-4 border-t border-gray-300 mt-4">
                             <span className="font-semibold text-[#2D1E0F] font-red-hat">Order Total</span>
                             <span className="text-xl font-bold text-[#2D1E0F] font-red-hat">
                                 ${totalPrice.toFixed(2)}

@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/product-list-with-cart-using-react-vite-jsx-and-tailwind-rMsR25Pd44)
+- Live Site URL: [Vercel URL](https://product-list-with-cart-gray.vercel.app/)
 
 ## My process
 

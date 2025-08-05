@@ -1,5 +1,5 @@
-import emptyCartIcon from './assets/images/illustration-empty-cart.svg'
-import carbonNeutralIcon from './assets/images/icon-carbon-neutral.svg'
+import emptyCartIcon from '/assets/images/illustration-empty-cart.svg'
+import carbonNeutralIcon from '/assets/images/icon-carbon-neutral.svg'
 
 export const Cart = ({ cartItems = [], onRemoveItem, onConfirmOrder }) => {
     const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0)
